@@ -8,19 +8,29 @@ Tutorial project to learn about developing RESTful API with Rust, using threadin
 ## Installation
 * Just call cargo
 ```sh
-    $cargo run
+    cargo run
 ```
 
 ## Build
 * Debug
 ```sh
-    $cargo build
+    cargo build
 ```
-** Release
+* Release
 ```sh
-    $cargo build --release
+    cargo build --release
 ```
 
 ## Usage
+Start `Debug`-version
+```
+    ./target/debug/rust-rest-api
+```
+
+Start `Release`-version
+```
+    ./target/release/rust-rest-api
+```
+
 By default, server is running at `8080` port.
 When application is running, open `localhost:8080`.
