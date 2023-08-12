@@ -19,6 +19,11 @@ Before testing or running, `db` must be enabled
 ```
 Check access `http://localhost:8181/`
 
+Run migrations (`.bat` for Windows, .sh for `Linux`)
+```
+    scripts\init_db.bat
+```
+
 ## Testing
 ```sh
     cargo check
