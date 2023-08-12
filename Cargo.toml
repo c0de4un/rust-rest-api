@@ -1,5 +1,5 @@
 [package]
-name = "rust-rest-api"
+name = "rust_rest_api"
 version = "0.1.0"
 edition = "2021"
 
@@ -7,3 +7,10 @@ edition = "2021"
 
 [dependencies]
 actix-web = "^4"
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+path = "src/main.rs"
+name = "rust_rest_api"
