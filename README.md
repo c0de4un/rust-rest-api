@@ -17,6 +17,7 @@ Before testing or running, `db` must be enabled
     cd db
     docker-compose up --build -d
 ```
+Check access `http://localhost:8181/`
 
 ## Testing
 ```sh
