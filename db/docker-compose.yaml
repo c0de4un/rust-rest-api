@@ -9,10 +9,8 @@ services:
       - ./data:/var/lib/postgres
     environment:
       - POSTGRES_PASSWORD=password
-  phpmyadmin:
-    image: phpmyadmin
+  adminer:
+    image: adminer
+    restart: always
     ports:
-      - 3306:80
-    environment:
-      - PMA_ARBITRARY=1
-      - PMA_HOST=db
+      - 8181:8080
