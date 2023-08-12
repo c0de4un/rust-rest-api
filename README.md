@@ -11,6 +11,12 @@ Tutorial project to learn about developing RESTful API with Rust, using threadin
     cargo run
 ```
 
+## Testing
+```sh
+    cargo check
+    cargo test
+```
+
 ## Build
 * Debug
 ```sh
