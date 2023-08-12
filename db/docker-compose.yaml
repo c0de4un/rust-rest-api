@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres
+    volumes:
+      - ./data:/var/lib/postgres
+    environment:
+      - POSTGRES_PASSWORD=password
+  phpmyadmin:
+    image: phpmyadmin
+    ports:
+      - 3306:80
+    environment:
+      - PMA_ARBITRARY=1
+      - PMA_HOST=db

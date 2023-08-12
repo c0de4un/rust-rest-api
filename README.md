@@ -11,6 +11,13 @@ Tutorial project to learn about developing RESTful API with Rust, using threadin
     cargo run
 ```
 
+## DataBase
+Before testing or running, `db` must be enabled
+```
+    cd db
+    docker-compose up --build -d
+```
+
 ## Testing
 ```sh
     cargo check
