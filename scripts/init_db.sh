@@ -13,7 +13,7 @@ fi
 DB_USER=${POSTGRES_USER:=postgres}
 DB_PASSWORD="${POSTGRES_PASSWORD:=password}"
 DB_NAME="${POSTGRES_DB:=newsletter}"
-DB_PORT="${POSTGRES_PORT:=3306}"
+DB_PORT="${POSTGRES_PORT:=5432}"
 
 if [[ -z "${SKIP_DOCKER}" ]]
 then
