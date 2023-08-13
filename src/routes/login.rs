@@ -1,5 +1,4 @@
-//! login.rs
-
+//! src/routes/login.rs
 use actix_web::{HttpResponse, Responder};
 
 pub async fn login() -> impl Responder {

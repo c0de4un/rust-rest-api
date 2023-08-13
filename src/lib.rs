@@ -1,8 +1,10 @@
-//! lib.rs
+//! src/lib.rs
 use actix_web::{web, App, HttpResponse, HttpServer, Responder};
 
-mod login;
-
+mod configuration;
+mod routes;
+mod startup;
+use routes::login;
 pub async fn health_check() -> impl Responder {
     HttpResponse::Ok()
 }
